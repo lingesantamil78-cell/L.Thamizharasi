@@ -1,0 +1,231 @@
+/* General */
+
+body {
+
+  font-family: "Poppins", sans-serif;
+
+  margin: 0; padding: 0;
+
+  background: linear-gradient(135deg, #f9fafb, #e0f2fe);
+
+  color: #1e293b;
+
+  transition: background 0.5s, color 0.5s;
+
+  line-height: 1.6;
+
+}
+
+body.dark {
+
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+
+  color: #f1f5f9;
+
+}
+
+/* Header */
+
+header {
+
+  text-align: center;
+
+  padding: 30px 20px 10px;
+
+  position: relative;
+
+}
+
+h1 {
+
+  font-size: 2.8rem;
+
+  color: #1e3a8a;
+
+  margin: 0;
+
+}
+
+body.dark h1 { color: #93c5fd; }
+
+#tagline {
+
+  font-size: 1.1rem;
+
+  color: #475569;
+
+  min-height: 25px;
+
+}
+
+body.dark #tagline { color: #cbd5e1; }
+
+#modeToggle {
+
+  position: absolute;
+
+  right: 20px;
+
+  top: 20px;
+
+  font-size: 1.2rem;
+
+  padding: 6px 12px;
+
+  background: #2563eb;
+
+  border: none;
+
+  border-radius: 50%;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+#modeToggle:hover { background: #16a34a; }
+
+/* Card Style */
+
+.card {
+
+  background: #fff;
+
+  margin: 20px auto;
+
+  padding: 20px 25px;
+
+  border-radius: 18px;
+
+  width: 90%; max-width: 650px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+
+  animation: fadeUp 1s ease;
+
+  transition: background 0.5s, transform 0.3s;
+
+}
+
+.card:hover { transform: translateY(-5px) scale(1.01); }
+
+body.dark .card { background: #1e293b; }
+
+/* Headings */
+
+h2 {
+
+  font-size: 1.4rem;
+
+  margin-bottom: 12px;
+
+  border-left: 6px solid #2563eb;
+
+  padding-left: 10px;
+
+  color: #2563eb;
+
+}
+
+body.dark h2 {
+
+  border-left-color: #60a5fa;
+
+  color: #60a5fa;
+
+}
+
+/* Skill Tags */
+
+.skill-tags span {
+
+  display: inline-block;
+
+  background: #e0f2fe;
+
+  color: #0369a1;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  margin: 5px;
+
+  font-size: 0.9rem;
+
+  transition: background 0.3s, transform 0.3s;
+
+}
+
+.skill-tags span:hover {
+
+  background: #93c5fd;
+
+  transform: scale(1.05);
+
+}
+
+body.dark .skill-tags span {
+
+  background: #334155;
+
+  color: #f1f5f9;
+
+}
+
+/* Contact */
+
+.contact button {
+
+  display: inline-block;
+
+  background: #2563eb;
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+
+  margin-top: 10px;
+
+  transition: background 0.3s;
+
+}
+
+.contact button:hover { background: #16a34a; }
+
+/* Footer */
+
+footer {
+
+  text-align: center;
+
+  padding: 20px;
+
+  font-size: 0.9rem;
+
+  color: #64748b;
+
+}
+
+body.dark footer { color: #cbd5e1; }
+
+/* Animations */
+
+@keyframes fadeUp {
+
+  from {opacity: 0; transform: translateY(30px);}
+
+  to {opacity: 1; transform: translateY(0);}
+
+}
